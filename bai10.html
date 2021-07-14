@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a = parseInt(prompt("Nhập số lượng điện đã sử dụng (kw)"));
+  let b = (a-200) * 3000 + 100 * 2000 + 100 * 1000;
+  let c = (a-100) * 2000 + 100 * 1000;
+  let d = a * 1000;
+  if (a>200){
+    alert("số tiền điện là"+b+"VND");
+  } else if (a>100){
+    alert("số tiền điện là"+c+"VND");
+  }else {
+    alert("số tiền điện là"+d+"VND");
+  }
+</script>
+</body>
+</html>

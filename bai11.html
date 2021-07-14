@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let TTN = parseInt(prompt("Nhập tổng thu nhập (triệu VND)"));
+  let MT = parseInt(prompt("Số tiền được miễn thuế (triệu VND)"));
+  let TNCT = TTN - MT;
+  let M1 = TNCT * 5 / 100;
+  let M2 = TNCT * 10 / 100+0.25;
+  let M3= TNCT * 15 / 100+0.75;
+  let M4 = TNCT * 20 / 100+0.195;
+  let M5= TNCT * 25 / 100+4.75;
+  let M6 = TNCT * 30/ 100+9.75;
+  let M7= TNCT * 35 / 100+18.15;
+  if (TNCT <5){
+    alert("Thuế thu nhập phải nộp là"+M1+ "triệu VND");
+  }else if (TNCT<10){
+    alert("Thuế thu nhập phải nộp là"+M2+ "triệu VND");
+  } else if (TNCT<18){
+    alert("Thuế thu nhập phải nộp là"+M3+ "triệu VND");
+  }else if (TNCT<32){
+    alert("Thuế thu nhập phải nộp là"+M4+ "triệu VND");
+  }else if (TNCT<52){
+    alert("Thuế thu nhập phải nộp là"+M5+ "triệu VND");
+  }else if (TNCT<80){
+    alert("Thuế thu nhập phải nộp là"+M6+ "triệu VND");
+  }else {
+    alert("Thuế thu nhập phải nộp là"+M7+ "triệu VND");
+  }
+</script>
+</body>
+</html>
